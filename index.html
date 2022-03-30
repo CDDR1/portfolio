@@ -64,7 +64,7 @@
 
         <!-- PROJECTS SECTION -->
         <section class="projects">
-            <h2 class="projects__title">Projects</h2>
+            <h2 class="projects__title section-title">Projects</h2>
             <div class="projects__cards-container">
                 <!-- PROJECT CARD 1 -->
                 <div class="card projects__card">
@@ -78,8 +78,8 @@
                         <span class="card__technology">HTML</span>
                     </div>
                     <div class="card__btns">
-                        <a href="#" class="card__btn demo-btn">Demo</a>
-                        <a href="#" class="card__btn repo-btn">Repo</a>
+                        <a href="#" class="card__btn">Demo</a>
+                        <a href="#" class="card__btn">Repo</a>
                     </div>
                 </div>
 
@@ -95,15 +95,24 @@
                         <span class="card__technology">HTML</span>
                     </div>
                     <div class="card__btns">
-                        <a href="#" class="card__btn demo-btn">Demo</a>
-                        <a href="#" class="card__btn repo-btn">Repo</a>
+                        <a href="#" class="card__btn">Demo</a>
+                        <a href="#" class="card__btn">Repo</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- CONTACT SECTION -->
-        <section class="contact"></section>
+        <section class="contact">
+            <h2 class="contact__title section-title">Contact</h2>
+            <h4 class="contact__subtitle">Let's get in touch!</h4>
+            <form action="" class="contact__form">
+                <input placeholder="Your name" type="text" aria-label="Your name" class="contact__input name-input" required>
+                <input placeholder="Your email" type="text" aria-label="Your email" class="contact__input email-input" required>
+                <textarea placeholder="Your message" name="message" aria-label="Your message" id="message" cols="30" rows="10" class="contact__textarea"></textarea>
+                <input type="submit" class="contact__btn">
+            </form>
+        </section>
 
         <!-- FOOTER -->
         <footer class="page__footer"></footer>
