@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body class="page">
-    <div class="page__container">
+    <div class="page__inner">
         <!-- HEADER AND NAVIGATION -->
         <header class="header">
             <div class="header__logo-container">
@@ -38,13 +38,17 @@
 
         <!-- HERO SECTION -->
         <section class="hero">
-            <h1 class="hero__title">Carlos Duque</h1>
-            <h2 class="hero__subtitle">Software Engineer</h2>
+            <div class="hero__titles">
+                <h1 class="hero__title">Carlos Duque</h1>
+                <h2 class="hero__subtitle">Software Engineer</h2>
+            </div>
         </section>
 
         <!-- ABOUT SECTION -->
         <section class="about">
-            <img src="./images/profile-img.jpeg" alt="Carlos Duque's profile image" class="about__photo">  
+            <div class="about__photo-container">
+                <img src="./images/profile-img.png" alt="Carlos Duque's profile image" class="about__photo">
+            </div>  
             <div class="about__social-icons">
                 <div class="social-icon">
                     <i class="github-icon fa-brands fa-github"></i>
