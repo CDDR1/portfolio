@@ -83,12 +83,21 @@ textarea {
   color: inherit;
 }
 
+input {
+    outline: none;
+}
+
 textarea {
   overflow: auto;
+  outline: none;
 }
 
 .hidden {
     display: none;
+}
+
+.section-title {
+    font-weight: 600;
 }
 
 
@@ -285,4 +294,58 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+/* || CONTACT SECTION */
+.contact {
+    background-color: var(--color-primary);
+    padding: var(--section-padding);
+}
+
+.contact__title {
+    color: var(--color-white);
+}
+
+.contact__subtitle {
+    text-align: center;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: var(--fs-200);
+    margin: 2rem 0 1rem;
+}
+
+.contact__form {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact__input,
+.contact__textarea {
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    border-radius: 7px;
+    background-color: rgba(114, 221, 247, 22%);
+    padding: 0.5rem;
+}
+
+.contact__textarea {
+    height: 13rem;
+}
+
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+    color: var(--color-secondary);
+}
+
+.contact__btn {
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 7px;
+    padding: 0.5rem;
+    font-weight: 600;
 }
