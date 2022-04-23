@@ -450,3 +450,94 @@ textarea {
         --section-padding: 2.5rem;
     }
 }
+
+@media (min-width: 450px) {
+    /* || ABOUT SECTION */
+    .about__photo {
+        max-width: 23rem;
+    }
+}
+
+@media (min-width: 500px) {
+    /* || GENERAL STYLES */
+    :root {
+        --fs-100: 1.75rem;
+        --fs-200: 2.2rem;
+        --fs-300: 2.75rem;
+        --fs-400: 3.2rem; 
+        --fs-500: 3.7rem;
+        --fs-600: 4.2rem;
+        --fs-700: 4.7rem;
+    }
+    
+    .social-icon {
+        font-size: var(--fs-600);
+    }
+    
+    .section-title {
+        font-size: var(--fs-500);
+    }
+    
+    /* || HEADER AND NAVIGATION */
+    .header__logo-container {
+        font-size: var(--fs-400);
+    }
+    
+    .header__menu {
+        gap: 0.6rem;
+    }
+
+    .header__line {
+        height: 0.4rem;
+        width: 3rem;
+    }
+
+    .header__line--long {
+        width: 5rem;
+    }
+
+    /* || HERO SECTION */
+    .hero__title {
+        font-size: var(--fs-700);
+    }
+
+    .hero__subtitle {
+        font-size: var(--fs-300);
+    }
+
+
+    /* || ABOUT SECTION */
+    .about__photo {
+        max-width: 27rem;
+    }
+
+    /* || PROJECTS SECTION */
+    .card__img {
+        height: 25rem;
+    }
+
+    .card__project-name {
+        font-size: var(--fs-300);
+    }
+
+    .card__btn {
+        width: 8.5rem;
+        height: 3.5rem;
+        border-radius: 12px;
+    }
+
+    /* || CONTACT SECTION */
+    .contact__input,
+    .contact__textarea {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+
+    .contact__textarea {
+        height: 25rem;
+    }
+
+    .contact__btn {
+        padding: 1rem;
+    }
+}
