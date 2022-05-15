@@ -307,6 +307,7 @@ textarea {
 }
 
 .card__img {
+    object-fit: cover;
     border-radius: inherit;
     height: 17rem;
     width: 100%;
@@ -409,7 +410,7 @@ textarea {
     background-color: var(--color-secondary);
     border: none;
     border-radius: 7px;
-    padding: 1rem;
+    padding: 0.5rem;
     font-weight: 600;
     cursor: pointer;
 }
@@ -537,6 +538,10 @@ textarea {
         max-width: 27rem;
     }
 
+    .about__text {
+        line-height: 3rem;
+    }
+
     /* || PROJECTS SECTION */
     .card__img {
         height: 25rem;
@@ -557,6 +562,7 @@ textarea {
     .contact__textarea {
         padding: 1.5rem;
         border-radius: 15px;
+        padding: 0.75rem;
     }
 
     .contact__textarea {
