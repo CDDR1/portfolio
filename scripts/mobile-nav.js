@@ -1,10 +1,16 @@
 const menu = document.querySelector(".header__menu");
+const closeMenuBtn = document.querySelector(".collapsable__close-btn");
 const nav = document.querySelector(".collapsable");
 const navLinks = document.querySelectorAll(".collapsable__link");
 
-const toggleNav = () => {
-    nav.classList.toggle("hidden");
+const showNav = () => {
+    nav.classList.remove("hidden");
 };
 
-menu.addEventListener("click", toggleNav);
-navLinks.forEach((link) => link.addEventListener("click", toggleNav));
+const collapseNav = () => {
+    nav.classList.add("hidden");
+};
+
+menu.addEventListener("click", showNav);
+closeMenuBtn.addEventListener("click", collapseNav);
+navLinks.forEach((link) => link.addEventListener("click", collapseNav));
