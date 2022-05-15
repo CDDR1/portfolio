@@ -256,9 +256,18 @@ textarea {
     cursor: pointer;
 }
 
+.about__content {
+    margin: 1.5rem;
+}
+
 .about__heading {
     color: var(--color-secondary);
     font-weight: 700;
+}
+
+.about__text {
+    margin-top: 0.25rem;
+    line-height: 1.75rem;
 }
 
 
