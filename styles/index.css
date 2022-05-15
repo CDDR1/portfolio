@@ -391,7 +391,7 @@ textarea {
     background-color: var(--color-secondary);
     border: none;
     border-radius: 7px;
-    padding: 0.5rem;
+    padding: 1rem;
     font-weight: 600;
     cursor: pointer;
 }
