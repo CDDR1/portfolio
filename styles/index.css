@@ -251,7 +251,7 @@ textarea {
 
 .about__photo {
     border-radius: 50%;
-    max-width: 90%;
+    max-width: 80%;
     margin-top: 3rem;
 }
 
@@ -262,7 +262,7 @@ textarea {
 }
 
 .social-icon {
-    font-size: var(--fs-600);
+    font-size: var(--fs-500);
     color: var(--color-secondary);
     cursor: pointer;
     transition: transform 0.2s;
@@ -332,6 +332,7 @@ textarea {
 }
 
 .card__project-description {
+    font-size: 95%;
     color: var(--color-card-description);
     margin: 1rem 0;
 }
@@ -419,7 +420,7 @@ textarea {
     color: var(--color-white);
     background-color: var(--color-secondary);
     border: none;
-    border-radius: 10px;
+    border-radius: 3px;
     padding: 0.5rem;
     font-weight: 600;
     cursor: pointer;
