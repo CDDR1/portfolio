@@ -20,6 +20,7 @@
     --fs-500: 3.7rem;
     --fs-600: 4.2rem;
     --fs-700: 4.7rem;
+    --fs-800: 5.2rem;
 }
 
 
@@ -262,7 +263,7 @@ textarea {
 }
 
 .social-icon {
-    font-size: var(--fs-500);
+    font-size: var(--fs-600);
     color: var(--color-secondary);
     cursor: pointer;
     transition: transform 0.2s;
@@ -420,7 +421,7 @@ textarea {
     color: var(--color-white);
     background-color: var(--color-secondary);
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 0.5rem;
     font-weight: 600;
     cursor: pointer;
@@ -471,10 +472,6 @@ textarea {
     }
 
     /* || ABOUT SECTION */
-    .about__photo {
-        max-width: 18rem;
-    }
-
     .about__heading {
         margin-left: 1.5rem;
     }
@@ -487,36 +484,47 @@ textarea {
 @media (min-width: 375px) {
     /* || GENERAL STYLES */
     :root {
-        --section-padding: 2.5rem;
+        --section-padding: 2rem 2.5rem 4rem;
+    }
+
+    /* || ABOUT SECTION */
+    .about__content {
+        margin: 0;
+    }
+}
+
+@media (min-width: 400px) {
+    /* || GENERAL STYLES */
+    .section-title {
+        font-size: var(--fs-600);
+    }
+
+    /* || PROJECTS SECTION */
+    .card__img {
+        height: 25rem;
+    }
+
+    /* || CONTACT SECTION */
+    .contact__form {
+        margin: 0.5rem;
     }
 }
 
 @media (min-width: 450px) {
-    /* || ABOUT SECTION */
-    .about__photo {
-        max-width: 23rem;
+    /* || HERO SECTION */
+    .hero__title {
+        font-size: var(--fs-800);
+    }
+
+    .hero__subtitle {
+        font-size: var(--fs-400);
     }
 }
 
 @media (min-width: 500px) {
-    /* || GENERAL STYLES */
-    :root {
-        --fs-100: 1.75rem;
-        --fs-200: 2.2rem;
-        --fs-300: 2.75rem;
-        --fs-400: 3.2rem; 
-        --fs-500: 3.7rem;
-        --fs-600: 4.2rem;
-        --fs-700: 4.7rem;
-    }
-    
     .social-icon {
         font-size: var(--fs-600);
     }
-    
-    /* .section-title {
-        font-size: var(--fs-400);
-    } */
     
     /* || HEADER AND NAVIGATION */
     .header__logo-container {
@@ -544,7 +552,6 @@ textarea {
         font-size: var(--fs-300);
     }
 
-
     /* || ABOUT SECTION */
     .about__photo {
         max-width: 27rem;
@@ -555,6 +562,10 @@ textarea {
     }
 
     /* || PROJECTS SECTION */
+    .projects__cards-container {
+        gap: 5rem;
+    }
+
     .card__img {
         height: 25rem;
     }
@@ -570,10 +581,14 @@ textarea {
     }
 
     /* || CONTACT SECTION */
+    .contact__subtitle {
+        margin-top: 5rem;
+    }
+
     .contact__input,
     .contact__textarea {
         padding: 1.5rem;
-        border-radius: 15px;
+        border-radius: 12px;
         padding: 0.75rem;
     }
 
@@ -583,5 +598,13 @@ textarea {
 
     .contact__btn {
         padding: 1rem;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 600px) {
+    /* || PROJECTS SECTION */
+    .card__img {
+        height: 30rem;
     }
 }
