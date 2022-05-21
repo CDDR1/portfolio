@@ -603,8 +603,23 @@ textarea {
 }
 
 @media (min-width: 600px) {
+    /* || HEADER AND NAVIGATION */
+    .header__menu {
+        gap: 0.8rem;
+    }
+
+    /* || HERO SECTION */
+    .hero__title {
+        font-size: var(--fs-800);
+    }
+    .hero__subtitle {
+        font-size: var(--fs-400);
+    }
+
     /* || PROJECTS SECTION */
     .card__img {
         height: 30rem;
     }
 }
+
+/* NOTE: Continue with the styles at 600px... */
