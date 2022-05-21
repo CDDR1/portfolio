@@ -1,4 +1,4 @@
-const menu = document.querySelector(".header__menu");
+const menu = document.querySelector(".navbar__menu");
 const closeMenuBtn = document.querySelector(".collapsable__close-btn");
 const nav = document.querySelector(".collapsable");
 const navLinks = document.querySelectorAll(".collapsable__link");

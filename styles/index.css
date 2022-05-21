@@ -12,7 +12,6 @@
     --footer-bg-color: #30302F;
     --color-white: #fff;
     --section-padding: 2rem 1.5rem 4rem;
-    /* --box-shadow:  */
     --fs-100: 1.7rem;
     --fs-200: 2.2rem;
     --fs-300: 2.7rem;
@@ -29,6 +28,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *, 
@@ -42,6 +42,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     font-size: var(--fs-100);
+    overflow-x: hidden;
 }
 
 img {
@@ -109,7 +110,7 @@ textarea {
 
 
 /* || HEADER AND NAVIGATION */
-.header {
+.navbar {
     position: absolute;
     top: 0;
     left: 0;
@@ -121,7 +122,7 @@ textarea {
     justify-content: space-between;
 }
 
-.header__logo-container {
+.navbar__logo-container {
     color: var(--color-white);
     font-size: var(--fs-400);
     display: flex;
@@ -129,7 +130,7 @@ textarea {
     align-items: center;
 }
 
-.header__menu {
+.navbar__menu {
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -138,14 +139,14 @@ textarea {
     gap: 0.8rem;
 }
 
-.header__line {
+.navbar__line {
     height: 0.4rem;
     width: 2.5rem;
     border-radius: 5px;
     background-color: var(--color-white);
 }
 
-.header__line--long {
+.navbar__line--long {
     width: 4.75rem;
 }
 
@@ -213,7 +214,7 @@ textarea {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background-color: #0d1b2a76;
+    background-color: #0d1b2a84;
 }
 
 .hero__titles {
@@ -229,7 +230,7 @@ textarea {
 }
 
 .hero__subtitle {
-    font-size: var(--fs-300);
+    font-size: var(--fs-200);
     font-weight: 400;
 }
 
@@ -259,6 +260,7 @@ textarea {
 .about__social-icons {
     margin: 1rem;
     display: flex;
+    justify-content: center;
     gap: 1.5rem;
 }
 
@@ -300,9 +302,8 @@ textarea {
 
 .projects__cards-container {
     margin: 3rem 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 3rem;
 }
 
@@ -425,6 +426,7 @@ textarea {
     padding: 0.5rem;
     font-weight: 600;
     cursor: pointer;
+    transition: opacity 0.3s;
 }
 
 .contact__btn:hover {
@@ -527,20 +529,20 @@ textarea {
     }
     
     /* || HEADER AND NAVIGATION */
-    .header__logo-container {
+    .navbar__logo-container {
         font-size: var(--fs-500);
     }
     
-    .header__menu {
+    .navbar__menu {
         gap: 0.6rem;
     }
 
-    .header__line {
+    .navbar__line {
         height: 0.4rem;
         width: 3rem;
     }
 
-    .header__line--long {
+    .navbar__line--long {
         width: 5rem;
     }
 
@@ -603,12 +605,21 @@ textarea {
 }
 
 @media (min-width: 600px) {
+    /* || GENERAL STYLES */
+    .section-title {
+        padding-left: 2.5rem;
+    }
+
     /* || HEADER AND NAVIGATION */
-    .header__menu {
+    .navbar__menu {
         gap: 0.8rem;
     }
 
     /* || HERO SECTION */
+    .hero__titles {
+        margin-bottom: 25rem;
+    }
+
     .hero__title {
         font-size: var(--fs-800);
     }
@@ -617,9 +628,86 @@ textarea {
     }
 
     /* || PROJECTS SECTION */
+    .projects__cards-container {
+        padding: 0 2rem;
+    }
+
     .card__img {
         height: 30rem;
     }
+
+    /* || CONTACT SECTION */
+    .contact__subtitle {
+        font-size: var(--fs-300);
+        margin-bottom: 2rem;
+    }
+
+    .contact__form {
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }
 
-/* NOTE: Continue with the styles at 600px... */
+@media (min-width: 1000px) {
+    /* || ABOUT SECTION */
+    .about {
+        padding: 10rem 2.5rem;
+        flex-direction: row;
+    }
+
+    .about__profile {
+        width: 40%;
+    }
+
+    .about__content {
+        width: 60%;
+    }
+
+    /* || PROJECTS SECTION */
+    .projects__cards-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1100px) {
+    /* || HEADER AND NAVIGATION */
+    .navbar__menu {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+        color: var(--color-white);
+    }
+
+    .nav__list {
+        font-size: var(--fs-200);
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .nav__link {
+        position: relative;
+    }
+
+    .nav__link::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 0.2rem;
+        width: 0;
+        background-color: var(--color-white);
+        transition: width 0.3s;
+    }
+
+    .nav__link:hover::after {
+        width: 100%;
+    }
+
+    /* || HERO SECTION */
+    .hero__titles {
+        margin-bottom: 18rem;
+    }
+}

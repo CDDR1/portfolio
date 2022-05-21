@@ -13,16 +13,24 @@
 <body class="page">
     <div class="page__inner">
         <!-- HEADER AND NAVIGATION -->
-        <header class="header">
-            <div class="header__logo-container">
-                <i class="header__logo fa-solid fa-code"></i>
+        <div class="navbar">
+            <div class="navbar__logo-container">
+                <i class="navbar__logo fa-solid fa-code"></i>
             </div>
-            <div class="header__menu">
-                <span class="header__line"></span>
-                <span class="header__line header__line--long"></span>
-                <span class="header__line"></span>
+            <div class="navbar__menu">
+                <span class="navbar__line"></span>
+                <span class="navbar__line navbar__line--long"></span>
+                <span class="navbar__line"></span>
             </div>
-        </header>
+            <nav class="nav hidden">
+                <ul class="nav__list">
+                    <li><a href="#hero" class="nav__link">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <!-- COLLAPSABLE NAVIGATION -->
         <div class="collapsable hidden">
@@ -49,18 +57,20 @@
 
         <!-- ABOUT SECTION -->
         <section id="about" class="about">
-            <div class="about__photo-container">
-                <img src="./images/profile-img.png" alt="Carlos Duque's profile image" class="about__photo">
-            </div>  
-            <div class="about__social-icons">
-                <div class="social-icon">
-                    <a href="https://github.com/CDDR1" class="github-link" target="_blank"><i class="github-icon fa-brands fa-github"></i></a>
+            <div class="about__profile">
+                <div class="about__photo-container">
+                    <img src="./images/profile-img.png" alt="Carlos Duque's profile image" class="about__photo">
                 </div>
-                <div class="social-icon">
-                    <a href="https://www.linkedin.com/in/carlosduq/" class="linkedin-link" target="_blank"><i class="linkedin-icon fa-brands fa-linkedin"></i></a>
-                </div>
-                <div class="social-icon">
-                    <a href="https://devpost.com/CDDR1?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" class="devpost-link" target="_blank"><i class="award-icon fa-solid fa-award"></i></a>
+                <div class="about__social-icons">
+                    <div class="social-icon">
+                        <a href="https://github.com/CDDR1" class="github-link" target="_blank"><i class="github-icon fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/carlosduq/" class="linkedin-link" target="_blank"><i class="linkedin-icon fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="social-icon">
+                        <a href="https://devpost.com/CDDR1?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" class="devpost-link" target="_blank"><i class="award-icon fa-solid fa-award"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="about__content">
