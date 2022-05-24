@@ -9,6 +9,7 @@
     --color-secondary: #72DDF7;
     --color-card-project-type: #676764;
     --color-card-description: #C2C3BD;
+    --projects-bg-color: #DCEDFF;
     --footer-bg-color: #30302F;
     --color-white: #fff;
     --section-padding: 2rem 1.5rem 4rem;
@@ -294,6 +295,7 @@ textarea {
 /* || PROJECTS SECTION */
 .projects {
     padding: var(--section-padding);
+    background-color: var(--projects-bg-color);
 }
 
 .projects__title {
