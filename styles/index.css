@@ -460,6 +460,12 @@ textarea {
     align-items: center;
 }
 
+.footer__email {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 
 
 /* || RESPONSIVE */
