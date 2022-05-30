@@ -119,6 +119,27 @@ textarea {
 
 
 
+/* || SCROLL UP BUTTON */
+.scroll-up {
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    cursor: pointer;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    font-size: var(--fs-300);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /* || HEADER AND NAVIGATION */
 .navbar {
     position: absolute;
