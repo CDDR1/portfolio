@@ -100,9 +100,17 @@ textarea {
     display: none;
 }
 
+.hide-menu * {
+    display: none;
+}
+
 .section-title {
     font-size: var(--fs-400);
     font-weight: 600;
+}
+
+.avoid-scroll {
+    overflow: hidden;
 }
 
 .page__inner {
@@ -133,6 +141,7 @@ textarea {
 }
 
 .navbar__menu {
+    z-index: 10;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -170,14 +179,12 @@ textarea {
     top: 0.35rem;
     right: 2.25rem;
     cursor: pointer;
-}
-
-.collapsable__nav {
-    height: 100vh;
+    z-index: 10;
 }
 
 .collapsable__list {
     height: 100%;
+    margin-top: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,7 +195,7 @@ textarea {
 .collapsable__link {
     z-index: 2;
     text-align: center;
-    font-size: var(--fs-600);
+    font-size: var(--fs-800);
     color: var(--color-white);
 }
 
