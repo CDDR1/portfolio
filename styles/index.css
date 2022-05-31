@@ -193,6 +193,13 @@ textarea {
     z-index: 2;
 }
 
+.collapsable__nav {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .collapsable__close-btn {
     color: var(--color-white);
     font-size: var(--fs-600);
@@ -205,7 +212,6 @@ textarea {
 
 .collapsable__list {
     height: 100%;
-    margin-top: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
