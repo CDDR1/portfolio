@@ -254,7 +254,7 @@ textarea {
 }
 
 .hero__titles {
-    margin-bottom: 20rem;
+    margin-bottom: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -677,10 +677,6 @@ textarea {
     }
 
     /* || HERO SECTION */
-    .hero__titles {
-        margin-bottom: 25rem;
-    }
-
     .hero__title {
         font-size: var(--fs-800);
     }
