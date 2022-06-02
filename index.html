@@ -197,13 +197,12 @@
         <section id="contact" class="contact">
             <h2 class="contact__title section-title">Contact</h2>
             <h4 class="contact__subtitle">Let's get in touch!</h4>
-            <form action="" class="contact__form">
-                <input placeholder="Your name" type="text" aria-label="Your name" class="contact__input name-input"
+            <form action="https://formspree.io/f/mlezzygp" method="POST" class="contact__form">
+                <input placeholder="Your name" type="text" name="name" class="contact__input name-input"
                     required>
-                <input placeholder="Your email" type="text" aria-label="Your email" class="contact__input email-input"
+                <input placeholder="Your email" type="text" name="email" class="contact__input email-input"
                     required>
-                <textarea placeholder="Your message" name="message" aria-label="Your message" id="message" cols="30"
-                    rows="10" class="contact__textarea"></textarea>
+                <textarea placeholder="Your message" name="message" id="message" cols="30" rows="10" class="contact__textarea"></textarea>
                 <input type="submit" class="contact__btn" value="Send">
             </form>
         </section>
