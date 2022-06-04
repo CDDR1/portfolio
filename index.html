@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/index.css">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="page">
@@ -18,7 +20,7 @@
         <a href="#hero" class="scroll-up">
             <i class="fa-solid fa-angles-up"></i>
         </a>
-        
+
         <!-- HEADER AND NAVIGATION -->
         <div class="navbar">
             <div class="navbar__logo-container">
@@ -65,47 +67,56 @@
         <!-- ABOUT SECTION -->
         <section id="about" class="about">
             <div class="about__profile">
-                <div class="about__photo-container">
+                <div class="about__photo-container animate__animated">
                     <img src="./images/profile-img.png" alt="Carlos Duque's profile image" class="about__photo">
                 </div>
                 <div class="about__social-icons">
                     <div class="social-icon">
                         <a href="https://github.com/CDDR1" class="github-link" target="_blank"><i
-                                class="github-icon fa-brands fa-github"></i></a>
+                                class="github-icon fa-brands fa-github animate__animated animate__delay-1s"></i></a>
                     </div>
                     <div class="social-icon">
                         <a href="https://www.linkedin.com/in/carlosduq/" class="linkedin-link" target="_blank"><i
-                                class="linkedin-icon fa-brands fa-linkedin"></i></a>
+                                class="linkedin-icon fa-brands fa-linkedin animate__animated animate__delay-1s"></i></a>
                     </div>
                     <div class="social-icon">
                         <a href="https://devpost.com/CDDR1?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-                            class="devpost-link" target="_blank"><i class="award-icon fa-solid fa-award"></i></a>
+                            class="devpost-link" target="_blank"><i
+                                class="award-icon fa-solid fa-award animate__animated animate__delay-1s"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="about__content">
+            <div class="about__content animate__animated">
                 <h2 class="about__heading">About Me</h2>
                 <p class="about__paragraph">
-                    I'm a Computer Programming & Information Systems student who loves bringing my ideas to life using technology. 
+                    I'm a Computer Programming & Information Systems student who loves bringing my ideas to life using
+                    technology.
                 </p>
                 <p class="about__paragraph">
-                    Since I was growing up, I started to develop an interest in creating websites. I learned about some Content Management Systems like Wix, but I always felt limited to the few things that a CMS allowed me to do. I then abandoned the idea of building websites for a few years.
+                    Since I was growing up, I started to develop an interest in creating websites. I learned about some
+                    Content Management Systems like Wix, but I always felt limited by the few things that a CMS allowed
+                    me to do. I then abandoned the idea of building websites for a few years.
                 </p>
                 <p class="about__paragraph">
-                    It was when I was in high school that I started taking Web Development seriously. I started doing some research and it didn't take long until I came across HTML, CSS and JavaScript. Although it seemed overwhelming at first, I started learning about these three technologies by my own. That was when I realized how much I like coding and decided to pursue a career in tech.  
+                    It was when I was in high school that I started taking Web Development seriously. I started doing
+                    some research and it didn't take long until I came across HTML, CSS and JavaScript. Although it
+                    seemed overwhelming at first, I started learning about these three technologies by my own. That was
+                    when I realized how much I like coding and decided to pursue a career in tech.
                 </p>
                 <p class="about__paragraph">
-                    Besides what I’m taught in college, I like learning more about programming on my own, especially things related to web development. I'm now seeking a software engineering internship that allows me to contribute to a company using the skills that I've learned.
+                    Besides what I’m taught in college, I like learning more about programming on my own, especially
+                    things related to web development. I'm now seeking a software engineering internship that allows me
+                    to contribute to a company using the skills that I've learned.
                 </p>
             </div>
         </section>
 
         <!-- PROJECTS SECTION -->
         <section id="projects" class="projects">
-            <h2 class="projects__title section-title">Projects</h2>
+            <h2 class="projects__title section-title animate__animated">Projects</h2>
             <div class="projects__cards-container">
                 <!-- PROJECT CARD 1 -->
-                <div class="card projects__card"> 
+                <div class="card projects__card animate__animated">
                     <div class="card__img-container">
                         <img src="./images/schedule-maker.png" alt="" class="card__img">
                     </div>
@@ -113,7 +124,10 @@
                         <span class="card__project-type">Web Application</span>
                         <h3 class="card__project-name">Schedule Maker</h3>
                         <p class="card__project-description">
-                            This project was created for the CEWIT Hackathon of 2022. Due to how difficult it is for my friends and I to find time during the week where we are all free to meet up, my team and I decided to create a web application that compares the schedules of various people and shows all the possible meeting times between them. 
+                            This project was created for the CEWIT Hackathon of 2022. Due to how difficult it is for my
+                            friends and I to find time during the week where we are all free to meet up, my team and I
+                            decided to create a web application that compares the schedules of various people and shows
+                            all the possible meeting times between them.
                         </p>
                         <div class="card__technologies">
                             <span class="card__technology">JavaScript</span>
@@ -128,7 +142,7 @@
                 </div>
 
                 <!-- PROJECT CARD 2 -->
-                <div class="card projects__card">
+                <div class="card projects__card animate__animated">
                     <div class="card__img-container">
                         <img src="./images/distract-block.png" alt="" class="card__img">
                     </div>
@@ -136,7 +150,10 @@
                         <span class="card__project-type">Google Chrome Extension</span>
                         <h3 class="card__project-name">Distract Block</h3>
                         <p class="card__project-description">
-                            This is an extension for Google Chrome that allows users to block distractive websites. It was built for the CEWIT Hackathon of 2021 and my team and I won in the category of "Best Education Hack". The extension was published in the Chrome Web Store and you can start using it by clicking the "demo" button below. 
+                            This is an extension for Google Chrome that allows users to block distractive websites. It
+                            was built for the CEWIT Hackathon of 2021 and my team and I won in the category of "Best
+                            Education Hack". The extension was published in the Chrome Web Store and you can start using
+                            it by clicking the "demo" button below.
                         </p>
                         <div class="card__technologies">
                             <span class="card__technology">JavaScript</span>
@@ -152,7 +169,7 @@
                 </div>
 
                 <!-- PROJECT CARD 3 -->
-                <div class="card projects__card">
+                <div class="card projects__card animate__animated">
                     <div class="card__img-container">
                         <img src="./images/enhanced-oasis.png" alt="" class="card__img">
                     </div>
@@ -160,7 +177,9 @@
                         <span class="card__project-type">Web Application</span>
                         <h3 class="card__project-name">Oasis</h3>
                         <p class="card__project-description">
-                            For the capstone project of my C# class, my team and I decided to recreate the course registering system of our college with a more modern-looking UI.  In this web app you can create an account, look at the offered courses, add/drop courses and look at your schedule. 
+                            For the capstone project of my C# class, my team and I decided to recreate the course
+                            registering system of our college with a more modern-looking UI. In this web app you can
+                            create an account, look at the offered courses, add/drop courses and look at your schedule.
                         </p>
                         <div class="card__technologies">
                             <span class="card__technology">C#</span>
@@ -178,7 +197,7 @@
                 </div>
 
                 <!-- PROJECT CARD 4 -->
-                <div class="card projects__card">
+                <div class="card projects__card animate__animated">
                     <div class="card__img-container">
                         <img src="./images/global-li.png" alt="" class="card__img">
                     </div>
@@ -186,7 +205,10 @@
                         <span class="card__project-type">Website</span>
                         <h3 class="card__project-name">Global LI</h3>
                         <p class="card__project-description">
-                            I built this website for a professor from my college as part of an internship. It displays data visualizations about the results of a study regarding exports and foreign direct investment on Long Island. The site uses JavaScript to fetch the data visualizations from a REST API.
+                            I built this website for a professor from my college as part of an internship. It displays
+                            data visualizations about the results of a study regarding exports and foreign direct
+                            investment on Long Island. The site uses JavaScript to fetch the data visualizations from a
+                            REST API.
                         </p>
                         <div class="card__technologies">
                             <span class="card__technology">JavaScript</span>
@@ -200,7 +222,7 @@
                             <a href="https://github.com/CDDR1/global-li" class="card__btn" target="_blank">Repo</a>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
         </section>
 
@@ -215,14 +237,13 @@
                 </div>
             </div>
 
-            <h2 class="contact__title section-title">Contact</h2>
-            <h4 class="contact__subtitle">Let's get in touch!</h4>
+            <h2 class="contact__title section-title animate__animated">Contact</h2>
+            <h4 class="contact__subtitle animate__animated animate__delay-1s">Let's get in touch!</h4>
             <form action="https://formspree.io/f/mlezzygp" method="POST" class="contact__form">
-                <input placeholder="Your name" type="text" name="name" class="contact__input name-input"
-                    required>
-                <input placeholder="Your email" type="text" name="email" class="contact__input email-input"
-                    required>
-                <textarea placeholder="Your message" name="message" id="message" cols="30" rows="10" class="contact__textarea"></textarea>
+                <input placeholder="Your name" type="text" name="name" class="contact__input name-input" required>
+                <input placeholder="Your email" type="text" name="email" class="contact__input email-input" required>
+                <textarea placeholder="Your message" name="message" id="message" cols="30" rows="10"
+                    class="contact__textarea"></textarea>
                 <input type="submit" class="contact__btn" value="Send">
             </form>
         </section>
@@ -236,12 +257,15 @@
                     </a>
                 </div>
                 <div class="social-icon social-icon--white">
-                    <a href="https://www.linkedin.com/in/carlosduq/" class="linkedin-link" target="_blank"><i
-                            class="linkedin-icon fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/carlosduq/" class="linkedin-link" target="_blank">
+                        <i class="linkedin-icon fa-brands fa-linkedin"></i>
+                    </a>
                 </div>
                 <div class="social-icon social-icon--white">
                     <a href="https://devpost.com/CDDR1?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-                        class="devpost-link" target="_blank"><i class="award-icon fa-solid fa-award"></i></a>
+                        class="devpost-link" target="_blank">
+                        <i class="award-icon fa-solid fa-award"></i>
+                    </a>
                 </div>
             </div>
             <hr class="footer__line">
@@ -254,6 +278,7 @@
 
     <!-- JavaScript -->
     <script src="./scripts/mobile-nav.js"></script>
+    <script src="./scripts/intersection-observer.js"></script>
     <script src="./scripts/contact-form.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./scripts/typed.js"></script>
