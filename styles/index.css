@@ -893,12 +893,31 @@ textarea {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .card__project-description {
+        height: 26rem;
+    }
+
     .card__btn {
         width: 9.5rem;
         height: 4rem;
     }
 
+    /* || CONTACT SECTION */
     .contact__form {
         margin-bottom: 5rem;
+    }
+}
+
+@media (min-width: 1700px) {
+    /* || PROJECTS SECTION */
+    .card__project-description {
+        height: 23rem;
+    }
+}
+
+@media (min-width: 1800px) {
+    /* || PROJECTS SECTION */
+    .card__project-description {
+        height: 20rem;
     }
 }
