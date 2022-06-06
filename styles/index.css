@@ -883,6 +883,15 @@ textarea {
         --fs-800: 5.5rem;
     }
 
+    /* || HERO SECTION */
+    .hero__title {
+        font-size: 6.5rem;
+    }
+
+    .hero__subtitle {
+        font-size: var(--fs-500);
+    }
+
     /* || ABOUT SECTION */
     .about__photo {
         max-width: 45rem;
@@ -916,6 +925,15 @@ textarea {
 }
 
 @media (min-width: 1800px) {
+    /* || HERO SECTION */
+    .hero__title {
+        font-size: 8rem;
+    }
+
+    .hero__subtitle {
+        font-size: var(--fs-600);
+    }
+
     /* || PROJECTS SECTION */
     .card__project-description {
         height: 20rem;
