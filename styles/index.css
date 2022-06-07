@@ -138,9 +138,15 @@ textarea {
     z-index: 2;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transition: box-shadow 0.25s;
+    transition: opacity 0.25s;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.scroll-up--hidden {
+    opacity: 0;
+    cursor: default;
 }
 
 
