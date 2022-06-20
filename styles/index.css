@@ -849,6 +849,11 @@ textarea {
         transform: scale(1.1);
     }
 
+    /* || PROJECTS SECTION */
+    .card__project-description {
+        height: 15rem;
+    }
+
     /* || CONTACT SECTION */
     .contact__form {
         max-width: 65rem;
