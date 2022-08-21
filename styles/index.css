@@ -363,6 +363,7 @@ textarea {
 .card__project-info {
   background-color: var(--color-primary);
   padding: 0 2rem 2rem;
+  height: 100%;
 }
 
 .card__project-type {
