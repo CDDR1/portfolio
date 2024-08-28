@@ -831,6 +831,7 @@ textarea {
   /* || PROJECTS SECTION */
   .card__project-description {
     height: 15rem;
+    margin-bottom: 5rem;
   }
 
   /* || CONTACT SECTION */
