@@ -819,6 +819,7 @@ textarea {
 
   /* || ABOUT SECTION */
   .about {
+    height: 100vh;
     gap: 0;
   }
 
